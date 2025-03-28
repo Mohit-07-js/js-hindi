@@ -47,4 +47,30 @@ console.log(typeof myObj);
 
 
 
+//**********************memory**************** */
+
+//  stack (primitive), Heap (non-primitive)
+// stack memory used as we declared a variable we get a copy of variable 
+// and a memory is defined as heap or Object it will get original value reference if we change the reference value then original value aslo changes
+
+
+let myYoutubename  = "hiteshchoudhary.com"
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+console.log(myYoutubename);
+console.log(anothername);
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+
+}
+
+let userTwo = userOne
+
+userTwo.email = "mohit@gogle.com"
+console.log(userOne);
+console.log(userTwo);
+
 
